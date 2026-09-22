@@ -1,20 +1,27 @@
+:root {
+  --primary-color: purple;
+}
 body {
   background-color: #202121;
   color: white;
   margin-left: 20px;
+  font: "Ubuntu Sans", Arial, Sans-Serif;
 }
 h1 {
   padding: 20px 0 0 0;
 }
 p {
   font-size: 20px;
+  line-height: 1.5;
+
 }
 a:link {
-  color: light-blue;
 }
+/*
 a:visited {
   color: green;
 }
+*/
 
 /* mouse over link */
 a:hover {
@@ -25,11 +32,41 @@ a:hover {
 a:active {
   color: blue;
 }
+.title {
+  background-color: purple;
+  padding: 10px;
+  width: fit-content;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  float: left;
+}
 
-.box {
-    width: fit-content;
-    padding: 10px;
-    border: lime;
-    border-width: 4px;
-    border-style: solid;
+ul li a {
+  display: block;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+  color: white;
+}
+.nav-item.active {
+  background-color: #4CAF50;
+}
+.responsive-image {
+  width: 25%;
+  height: auto;
+  margin-right: 10px;
 }
